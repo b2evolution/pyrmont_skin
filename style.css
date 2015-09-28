@@ -32,7 +32,7 @@ a img { border: none }
 div#page_wrap { width: 960px; margin: 0 auto; background: url(images/bg.gif) no-repeat }
 .PostBottom,
 .AfterPosts { margin:15px; padding:5px }
-.star_rating { float:right; padding:5px 30px 0 20px }
+.star_rating { float:right; }
 
 div#header { font-size: 12px }
 div#header div.blog_list { float:right; margin-top:15px; color:#CCC; line-height:18px }
@@ -190,9 +190,7 @@ div.moderation_msg { border-style:solid; margin:10px; padding:10px; clear:both }
 .bCommentText { margin:5px 20px 0 20px }
 .bCommentSmallPrint { text-align:right }
 .bCommentSmallPrint img { display:none }
-.comment_rating { float:right; padding:0 0 20px 20px }
-.comment_gravatar { float:left; margin:4px 10px 5px 0; border:1px solid #444; padding:2px; background:#222; color:#333 }
-/* v1.1 FIXES */
+/* v1.2 FIXES */
 .action_messages ul {
 	margin: 0px !important;
 }
@@ -226,4 +224,8 @@ div.moderation_msg { border-style:solid; margin:10px; padding:10px; clear:both }
 }
 #sidebar ul ul {
 	margin-left: 0px !important;
+}
+div.widget_core_coll_avatar {
+	margin: 0em !important;
+	padding: 12px 0px 15px 0px;
 }

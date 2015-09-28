@@ -103,38 +103,6 @@ class pyrmont_Skin extends Skin
 			require_js_helper( 'colorbox', 'blog' );
 		}
 	}
-	
-	
-	// Get gravatar URL
-	function disp_gravatar_img( $Comment, $params = array() )
-	{
-		global $skins_url;
-		
-		if( empty($Comment) ) return false;
-		
-		$params = array_merge( array(
-					'default'	=> $skins_url.'pyrmont/images/gravatar.jpg',
-					'size'		=> '60',
-				), $params );
-		
-		$url = 'http://www.gravatar.com/avatar.php?gravatar_id='.md5( $Comment->get_author_email() );
-		
-		if( !empty($params['rating']) )
-			$url .= '&amp;rating='.$params['rating'];
-			
-		if( !empty($params['size']) )
-			$url .='&amp;size='.$params['size'];
-			
-		if( !empty($params['default']) )
-			$url .= '&amp;default='.urlencode($params['default']);
-			
-		if( !empty($params['border']) )
-			$url .= '&amp;border='.$params['border'];
-		
-		$img = '<img src="'.$url.'" class="comment_gravatar" title="'.$Comment->get_author_name().'" alt="'.$Comment->get_author_name().'" />';
-		
-		echo $img;
-	}
 }
 
 ?>

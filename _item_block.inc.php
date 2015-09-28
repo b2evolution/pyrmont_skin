@@ -44,9 +44,6 @@ $params = array_merge( array(
 	?>
   </div>
   <div class="bTitle">
-    <div class="star_rating">
-      <?php $Plugins->call_by_code( 'starrating', array('id' => $Item->ID ) ); ?>
-    </div>
     <h2>
       <?php
 	  $Item->edit_link( array(
@@ -104,14 +101,7 @@ $params = array_merge( array(
 </div>
 <?php
 // FEEDBACK (COMMENTS/TRACKBACKS) INCLUDED HERE
-skin_include( '_item_feedback.inc.php', array(
-		'before_section_title'	=> '<div class="comment_section_title">',
-		'after_section_title'	=> '</div>',
-		'form_title_start'		=> '<div class="comment_form_title">',
-		'form_title_end'		=> '</div>',
-		'comment_list_start'	=> '',
-		'comment_list_end'		=> '',
-	) );
+skin_include( '_item_feedback.inc.php' );
 
 locale_restore_previous();
 ?>

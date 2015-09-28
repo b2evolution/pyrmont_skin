@@ -71,7 +71,7 @@ global $s;
 		'block_display_title' => false,
 		'disp_search_options' => 0,
 		'search_class' => 'extended_search_form',
-		'use_search_disp' => 1,
+		'use_search_disp' => 0,
 	) );
 	?>
     </div>
@@ -213,7 +213,7 @@ global $s;
 </div>
 <div id="footer">
   <div class="footer_wrapper">
-    <div class="footer_left">Theme: <a href="http://imotta.cn">Pyrmont V2</a>, <a href="http://b2evo.sonorth.com/show.php/b2evolution-freelance-work">b2evolution freelance services</a> by Sonorth Corp.</div>
+    <div class="footer_left">Theme: <a href="http://imotta.cn">Pyrmont V1.2</a>, <a href="http://b2evo.sonorth.com/show.php/b2evolution-freelance-work">b2evolution freelance services</a> by Sonorth Corp.</div>
     <div>Powered by <a href="http://b2evolution.net/">b2evolution</a></div>
   </div>
 </div>
